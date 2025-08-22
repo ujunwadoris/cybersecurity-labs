@@ -47,46 +47,37 @@ Set up Kali Linux in VirtualBox and perform basic network reconnaissance to iden
 - Connected it to the same network as Metasploitable2  
 - Discovered Metasploitable2’s IP address  
 
-*Verified system status:*  
-```bash
+*Verified system status:*
+bash
 ip a
 uname -a
 
-Network discovery with Netdiscover:
 
+*Network discovery with Netdiscover:*
+bash
 netdiscover -r 192.168.56.0/24
 
-Basic Nmap scan:
 
+*Basic Nmap scan:*
+bash
 nmap -sS [target_IP]
 
 
-4) Results & Screenshots
-	•	ip a confirmed Kali network interface up and running.
-	•	netdiscover revealed Metasploitable2 IP (e.g., 192.168.56.101).
-	•	Nmap detected several open ports (21 - FTP, 22 - SSH, 23 - Telnet, 80 - HTTP, 3306 - MySQL).
+## 4) Results & Screenshots
+- ip a confirmed Kali network interface up and running.
+- netdiscover revealed Metasploitable2 IP (e.g., 192.168.56.101).
+- Nmap detected several open ports (21-FTP, 22-SSH, 23-Telnet, 80-HTTP, 3306-MySQL).
 
- Add screenshots here:
-	•	ip a output
-	•	netdiscover IP discovery
-	•	Nmap scan results
+(add screenshots here)
 
-5) Findings & Mitigation
-	•	Telnet (23/tcp) open → insecure plaintext protocol.
-	•	Mitigation: Disable Telnet, use SSH instead.
-	•	FTP (21/tcp) allows anonymous login → risk of unauthorized access.
-	•	Mitigation: Disable anonymous login, enforce authentication.
+## 5) Findings & Mitigation
+- *Telnet (23/tcp)* open → insecure plaintext protocol.  
+  Mitigation: Disable Telnet, use SSH instead.  
+- *FTP (21/tcp)* allows anonymous login → risk of unauthorized access.  
+  Mitigation: Disable anonymous login, enforce authentication.
 
-
-6) Reflection
-
-This lab taught me how to:
-	•	Successfully install and configure Kali Linux in VirtualBox.
-	•	Connect Kali to the same host-only network as Metasploitable2.
-	•	Use netdiscover for reconnaissance and Nmap for port scanning.
-
-
-
+## 6) Reflection
+This lab taught me how to install/configure Kali, connect VMs on host-only, and run recon with netdiscover + Nmap.
 ## Lab 3: Vulnerability Scanning with Nmap and Nikto
 
 ## 1) Goal  
