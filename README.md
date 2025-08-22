@@ -188,11 +188,23 @@ Add screenshots here:
   *Mitigation:* Restrict access with firewall rules and enforce strong authentication.  
 
 ### 6) Reflection
-This lab taught me how to:  
-- Use Metasploit to search, select, and execute exploit modules.  
-- Understand how scanning (Lab 2–3) leads to exploitation (Lab 4).  
-- Recognize the importance of patch management and disabling unused services.  
+This lab helped me move from basic reconnaissance (Lab 2) to detailed vulnerability analysis:  
+- Learned how Nmap’s -sV option reveals software versions.  
+- Used Nikto to identify common web vulnerabilities.  
+- Understood how to map results to real-world mitigations.  
 
+```
+
+## Lab 4: Exploitation Using Metasploit
+
+### 1) Goal
+Demonstrate exploitation of a vulnerable service (vsFTPd 2.3.4 backdoor) on Metasploitable2 using the Metasploit Framework.
+
+### 2) Environment
+- Host: Windows 11, VirtualBox 7.x  
+- Attacker: Kali Linux 2025.2 VM  
+- Target: Metasploitable2 (Ubuntu 2.6.24 VM)  
+- Tool: Metasploit Framework (msfconsole)
 
 
 
