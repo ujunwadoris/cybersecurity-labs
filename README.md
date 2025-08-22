@@ -5,11 +5,12 @@ This is where I document everything I'm practicing — from virtual labs to tool
 
 - ## 📚 Table of Contents
 
-- [🔥 Lab 1: Metasploitable2 Setup](#lab-1-metasploitable2-setup-vulnerable-machine-for-testing)
-- [🧠 Lab 2: Nmap Scan on Metasploitable2](#lab-2-nmap-scan-on-metasploitable2)
-- [🧪 Lab 3: Wireshark Packet Capture](#lab-3-wireshark-packet-capture)
-- [🚨 Lab 4: Metasploit Exploit Demo](#lab-4-metasploit-exploit-demo)
-- [🔐 What’s Next](#whats-next)
+## Table of Contents
+- [Lab 1: Metasploitable2 Setup](#lab-1-metasploitable2-setup-vulnerable-machine-for-testing)
+- [Lab 2: Kali Linux Setup and Reconnaissance](#lab-2-kali-linux-setup-and-reconnaissance)
+- [Lab 3: Vulnerability Scanning with Nmap and Nikto](#lab-3-vulnerability-scanning-with-nmap-and-nikto)
+- [Lab 4: Exploitation Using Metasploit](#lab-4-exploitation-using-metasploit)
+- [What’s Next](#whats-next)
 
 
 ##  Lab 1: Metasploitable2 Setup (Vulnerable Machine for Testing)
@@ -84,6 +85,8 @@ This lab taught me how to:
 	•	Connect Kali to the same host-only network as Metasploitable2.
 	•	Use netdiscover for reconnaissance and Nmap for port scanning.
 
+
+
 ## Lab 3: Vulnerability Scanning with Nmap and Nikto   
 
 ## 1) Goal  
@@ -121,7 +124,6 @@ nikto -h http://[target_IP]
 	•	Nikto scan results
 
 
-
 5) Findings & Mitigation
 	•	Apache HTTPD outdated → risk of known exploits.
 	•	Mitigation: Upgrade to latest stable Apache version.
@@ -137,6 +139,7 @@ This lab helped me move from basic reconnaissance (Lab 2) to detailed vulnerabil
 	•	Learned how Nmap’s -sV option reveals software versions.
 	•	Used Nikto to identify common web vulnerabilities.
 	•	Understood how to map results to real-world mitigations.
+
 
 
 ## Lab 4: Exploitation Using Metasploit  
