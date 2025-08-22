@@ -28,7 +28,7 @@ Status:  Completed
   uname -a
 
 
-# Lab 2: Kali Linux Setup and Reconnaissance  
+## Lab 2: Kali Linux Setup and Reconnaissance  
 
 ## 1) Goal  
 Set up Kali Linux in VirtualBox and perform basic network reconnaissance to identify the Metasploitable2 target.  
@@ -84,7 +84,7 @@ This lab taught me how to:
 	•	Connect Kali to the same host-only network as Metasploitable2.
 	•	Use netdiscover for reconnaissance and Nmap for port scanning.
 
-# Lab 3: Vulnerability Scanning with Nmap and Nikto  
+## Lab 3: Vulnerability Scanning with Nmap and Nikto   
 
 ## 1) Goal  
 Perform deeper vulnerability scanning by:  
@@ -139,7 +139,7 @@ This lab helped me move from basic reconnaissance (Lab 2) to detailed vulnerabil
 	•	Understood how to map results to real-world mitigations.
 
 
-# Lab 4: Exploitation Using Metasploit  
+## Lab 4: Exploitation Using Metasploit  
 
 ## 1) Goal  
 Demonstrate exploitation of a vulnerable service (vsFTPd 2.3.4 backdoor) on Metasploitable2 using the Metasploit Framework.  
