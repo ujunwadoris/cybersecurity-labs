@@ -36,8 +36,8 @@ Screenshot:
 ---
 
 ## 3. System Information
-- *Kali uname*: ![Kali uname](lab1_kali_ip_uname.png)  
-- *Metasploitable uname*: ![Metasploitable uname](lab1_metasploitable_ip_uname.png)
+- Kali uname: ![Kali uname](lab1_kali_ip_uname.png.png)  
+- Metasploitable uname: ![Metasploitable uname](lab1_metasploitable_ip_uname.png.png)
 
 ---
 
