@@ -31,7 +31,7 @@ Screenshot:
 
 ## 2. Verify Metasploitable IP Address
 Screenshot:  
-lab1_metasploitable_ip_uname.png.png
+![Metasploitable IP](lab1_metasploitable_ip_uname.png.png)
 
 ---
 
