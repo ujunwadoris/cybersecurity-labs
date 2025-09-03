@@ -25,7 +25,7 @@ This is where I document everything I'm practicing — from virtual labs to tool
 
 ## 1. Verify Kali Linux IP Address
 Screenshot:  
-![Kali IP](lab1_kali_ip.png)
+![Kali IP](lab1%20kali%20ip.png)
 
 ---
 
