@@ -12,7 +12,55 @@ This is where I document everything I'm practicing — from virtual labs to tool
 - [Lab 4: Exploitation Using Metasploit](#lab-4-exploitation-using-metasploit)
 - [What’s Next](#whats-next)
 
+---
 
+# Week 1 – Lab Setup and Initial Reconnaissance
+
+## Objective
+- Set up Kali Linux and Metasploitable VMs
+- Verify network configuration
+- Perform initial host discovery and reconnaissance
+
+---
+
+## 1. Verify Kali Linux IP Address
+Screenshot:  
+![Kali IP](lab1_kali_ip.png)
+
+---
+
+## 2. Verify Metasploitable IP Address
+Screenshot:  
+![Metasploitable IP](lab1_metasploitable_ip_uname.png)
+
+---
+
+## 3. System Information
+- *Kali uname*: ![Kali uname](lab1_kali_ip_uname.png)  
+- *Metasploitable uname*: ![Metasploitable uname](lab1_metasploitable_ip_uname.png)
+
+---
+
+## 4. Host Discovery
+Used netdiscover to identify active hosts in the subnet.  
+Screenshot:  
+![IP Discovery](Lab1_ip_discovery.png)
+
+---
+
+## 5. Network Reconnaissance
+Started scanning the Metasploitable target.  
+Screenshots:  
+- ![Host Discovery](lab2-host-discovery.png)  
+- ![Network Reconnaissance](lab2-network-reconnaissance.png)
+
+---
+
+## Summary
+In Week 1, I successfully:
+- Set up the lab environment (Kali + Metasploitable).
+- Verified connectivity and IP addresses.
+- Ran initial scans to confirm both machines can communicate.
 ##  Lab 1: Metasploitable2 Setup (Vulnerable Machine for Testing)
 
 Tool Used: VirtualBox  
