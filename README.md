@@ -106,7 +106,7 @@ In Week 1, I successfully:
 - Ran service detection scan (nmap -sV 192.168.56.104).  
 - Discovered open ports and services (FTP, SSH, MySQL, Apache Tomcat, Samba, etc.).
 
-![Nmap Scan](week%202_nmap_scan.png)
+![Nmap Scan](week_2_nmap_scan.png)
 ## Week 2 Summary
 In Week 2, I successfully:
 - Verified IP addresses for both Kali and Metasploitable.
