@@ -61,6 +61,63 @@ In Week 1, I successfully:
 - Set up the lab environment (Kali + Metasploitable).
 - Verified connectivity and IP addresses.
 - Ran initial scans to confirm both machines can communicate.
+
+- ---
+
+# Week 2 – Host Discovery & Reconnaissance
+
+### Step 1 – Verify IP Addresses
+- Kali IP: 192.168.56.103
+- Metasploitable IP: 192.168.56.104
+
+![Kali IP](week2/week_2_kali_ip.png)  
+![Metasploitable IP](week2/week_2_metasploitable.png)
+
+---
+
+### Step 2 – Ping Test
+- Kali → Metasploitable (Success: 0% packet loss)  
+- Metasploitable → Kali (Success: 0% packet loss)
+
+![Kali Ping](week2/week_2_kali_ping.png)
+![Metasploitable Ping](week2/week_2_metasploitable.png)
+
+---
+
+### Step 3 – ARP Table Check
+- Verified discovered hosts in ARP table.  
+- Confirmed that machines can see each other on the same subnet.
+
+![Kali ARP](week2/week_2_kali_arp.png)
+![Metasploitable ARP](week2/week_2_metasploitable_arp.png)
+
+---
+
+### Step 4 – Netdiscover Scan
+- Scanned the subnet with Netdiscover.  
+- Found active hosts: Kali, Metasploitable, and VirtualBox Host-Only Adapter.
+
+![Netdiscover](week2/week_2_netdiscover.png)
+
+
+---
+
+### Step 5 – Nmap Service Scan
+- Ran service detection scan (nmap -sV 192.168.56.104).  
+- Discovered open ports and services (FTP, SSH, MySQL, Apache Tomcat, Samba, etc.).
+
+![Nmap Scan](week2/week_2_nmap_scan.png)
+## Week 2 Summary
+In Week 2, I successfully:
+- Verified IP addresses for both Kali and Metasploitable.
+- Confirmed connectivity with ping tests (0% packet loss).
+- Checked ARP tables to validate network visibility.
+- Scanned the subnet with Netdiscover to discover active hosts.
+- Used Nmap to identify open ports and running services on Metasploitable.
+
+
+
+---
 ##  Lab 1: Metasploitable2 Setup (Vulnerable Machine for Testing)
 
 Tool Used: VirtualBox  
