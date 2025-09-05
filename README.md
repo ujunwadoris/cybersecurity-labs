@@ -70,7 +70,7 @@ In Week 1, I successfully:
 ### Step 1 – Verify IP Addresses
 - Kali IP: 192.168.56.103
 - Metasploitable IP: 192.168.56.104
-![Kali IP](week%202_kali_ip.png.png)
+![Kali IP](week%202_kali_ip.png.png.png)
 ![Metasploitable IP](week%202_metasploitable.png)
 
 ---
