@@ -70,8 +70,8 @@ In Week 1, I successfully:
 - Kali IP: 192.168.56.103
 - Metasploitable IP: 192.168.56.104
 
-![Kali IP](week%202_kali_ip.png.png)
-![Metasploitable IP](week%202_metasploitable.png.png)
+![Kali IP](week2_kali_ip.png)
+![Metasploitable IP](week2_metasploitable.png)
 
 ---
 
@@ -79,8 +79,8 @@ In Week 1, I successfully:
 - Kali → Metasploitable (Success: 0% packet loss)  
 - Metasploitable → Kali (Success: 0% packet loss)
 
-![Kali Ping](week%202_kali_ping.png.png)
-![Metasploitable Ping](week%202_metasploitable_ping.png.png)
+![Kali Ping](week2_kali_ping.png)
+![Metasploitable Ping](week2_metasploitable_ping.png)
 
 ---
 
@@ -106,7 +106,7 @@ In Week 1, I successfully:
 - Ran service detection scan (nmap -sV 192.168.56.104).  
 - Discovered open ports and services (FTP, SSH, MySQL, Apache Tomcat, Samba, etc.).
 
-![Nmap Scan](week%202_nmap_scan.png.png)
+![Nmap Scan](week2_nmap_scan.png)
 ## Week 2 Summary
 In Week 2, I successfully:
 - Verified IP addresses for both Kali and Metasploitable.
