@@ -80,7 +80,7 @@ In Week 1, I successfully:
 - Metasploitable → Kali (Success: 0% packet loss)
 
 ![Kali Ping](week%202_kali_ping.png.png)
-![Metasploitable Ping](week2_metasploitable_ping.png)
+![Metasploitable Ping](week%202_kali_ping.png.png)
 
 ---
 
@@ -105,7 +105,7 @@ In Week 1, I successfully:
 - Ran service detection scan (nmap -sV 192.168.56.104).
 - Discovered open ports and services (FTP, SSH, MySQL, Apache Tomcat, Samba, etc.).
 
-![Nmap Scan](week%202%20_nmap_scan.png)
+![Nmap Scan](week%202_nmap_scan.png.png)
 - Checked ARP tables to validate network visibility.  
 - Scanned the subnet with Netdiscover to discover active hosts.  
 - Used Nmap to identify open ports and running services on Metasploitable.
