@@ -51,7 +51,7 @@ Screenshot:
 ## 5. Network Reconnaissance
 Started scanning the Metasploitable target.  
 Screenshots:  
-- ![Host Discovery](lab2-host-discovery.png)  
+![Host Discovery](Lab1_ip_discovery.png)
 - ![Network Reconnaissance](lab2-network-reconnaissance.png)
 
 ---
