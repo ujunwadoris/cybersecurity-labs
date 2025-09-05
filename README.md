@@ -70,8 +70,8 @@ In Week 1, I successfully:
 - Kali IP: 192.168.56.103
 - Metasploitable IP: 192.168.56.104
 
-![Kali IP](week2/week_2_kali_ip.png)
-![Metasploitable IP](week2/week_2_metasploitable_ip.png)
+![Kali IP](week%202/week%202_kali_ip.png.png)
+![Metasploitable IP](week%202/week%202_metasploitable.png.png)
 
 ---
 
@@ -79,8 +79,8 @@ In Week 1, I successfully:
 - Kali → Metasploitable (Success: 0% packet loss)  
 - Metasploitable → Kali (Success: 0% packet loss)
 
-![Kali Ping](week2/week_2_kali_ping.png)
-![Metasploitable Ping](week2/week_2_metasploitable_ping.png)
+![Kali Ping](week%202/week%202_kali_ping.png.png)
+![Metasploitable Ping](week%202/week%202_metasploitable_ping.png.png)
 
 ---
 
@@ -88,8 +88,8 @@ In Week 1, I successfully:
 - Verified discovered hosts in ARP table.  
 - Confirmed that machines can see each other on the same subnet.
 
-![Kali ARP](week2/week_2_kali_arp.png)
-![Metasploitable ARP](week2/week_2_metasploitable_arp.png)
+![Kali ARP](week%202/week%202_kali_arp.png.png)
+![Metasploitable ARP](week%202/week%202_metasploitable_arp.png.png)
 
 ---
 
@@ -97,7 +97,7 @@ In Week 1, I successfully:
 - Scanned the subnet with Netdiscover.  
 - Found active hosts: Kali, Metasploitable, and VirtualBox Host-Only Adapter.
 
-![Netdiscover](week2/week_2_netdiscover.png)
+![Netdiscover](week%202/week%202_netdiscover.png.png)
 
 
 ---
@@ -106,7 +106,7 @@ In Week 1, I successfully:
 - Ran service detection scan (nmap -sV 192.168.56.104).  
 - Discovered open ports and services (FTP, SSH, MySQL, Apache Tomcat, Samba, etc.).
 
-![Nmap Scan](week2/week_2_nmap_scan.png)
+![Nmap Scan](week%202/week%202_nmap_scan.png.png)
 ## Week 2 Summary
 In Week 2, I successfully:
 - Verified IP addresses for both Kali and Metasploitable.
