@@ -71,7 +71,7 @@ In Week 1, I successfully:
 - Kali IP: 192.168.56.103
 - Metasploitable IP: 192.168.56.104
 ![Kali IP](week%202_kali_ip.png.png)
-![Metasploitable IP](week%202_metasploitable.png.png))
+![Metasploitable IP](week%202_metasploitable.png)
 
 ---
 
