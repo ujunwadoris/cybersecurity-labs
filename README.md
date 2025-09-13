@@ -1,4 +1,67 @@
+Yes ✅ — that’s exactly the issue. Right now, your README.md file only contains Week 3, which is why when you open it, it starts straight from:
 
+# Week 3 – Vulnerability Scanning and Exploitation (Metasploitable 3)
+
+👉 Your screenshots for Week 1 and Week 2 are already uploaded into GitHub, but you never added their descriptions/sections into the README.
+
+To fix this, you just need to manually paste Week 1 and Week 2 sections above Week 3 in the file you’re editing right now.
+
+Here’s what to paste at the very top (before Week 3):
+
+# Week 1 – IP Discovery and Reconnaissance
+
+## Overview
+This week introduced reconnaissance basics using Kali and Metasploitable.  
+The objective was to identify the attacker (Kali) and target (Metasploitable) machine IPs.
+
+## Steps and Evidence
+### 🔍 1. Discover Target IP
+Screenshot: Lab1_ip_discovery.png  
+- Discovered the target machine IP using scanning tools.
+
+### 🔍 2. Verify Kali IP
+Screenshot: lab1_kali_ip.png  
+- Verified the Kali machine IP.
+
+### 🔍 3. Verify Metasploitable IP
+Screenshot: lab1_metasploitable_ip_uname.png  
+- Verified the Metasploitable machine IP.
+
+---
+
+# Week 2 – Network Scanning and Host Discovery
+
+## Overview
+This week focused on host discovery and reconnaissance.  
+The objective was to scan the subnet, identify live hosts, and confirm connectivity.
+
+## Steps and Evidence
+### 🔍 1. Host Discovery
+Screenshot: lab2-host-discovery.png  
+- Ran discovery scan to find live hosts.
+
+### 🔍 2. Network Reconnaissance
+Screenshot: lab2-network-reconnaissance.png  
+- Mapped the network and identified target systems.
+
+### 🔍 3. Netdiscover Scan
+Screenshot: week2_netdiscover.png  
+- Used netdiscover to confirm devices on the subnet.
+
+### 🔍 4. ARP and Ping Tests
+Screenshot: week2_kali_arp.png  
+Screenshot: week2_kali_ping.png  
+Screenshot: week2_metasploitable.png  
+- Verified connectivity with ARP and ping commands.
+
+---
+
+After pasting this, your README will look like this in order:
+	•	Week 1
+	•	Week 2
+	•	Week 3
+
+👉 Do you want me to also add Week 4 placeholder now (empty structure), so you won’t have to redo this later?
 
 # Week 3 – Vulnerability Scanning and Exploitation (Metasploitable 3)
 
@@ -105,4 +168,5 @@ Screenshot: use_exploitlinuxsambatrans2open.png
 
 ---
  
+
 
