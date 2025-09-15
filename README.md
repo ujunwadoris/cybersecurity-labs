@@ -393,7 +393,7 @@ Used a Samba exploit module to attempt remote code execution.
 Exploit was launched, but no session was created (target did not open a shell).  
 
 This shows that exploitation was attempted but unsuccessful in this configuration.  
-![Exploit Attempt](use_exploitlinuxsambatrans2open.png.png))
+![Exploit Attempt](use%20exploitlinuxsambatrans2open.png.png)
 
 ---
 
@@ -401,5 +401,6 @@ This shows that exploitation was attempted but unsuccessful in this configuratio
 - Successfully performed Nmap reconnaissance (ports, services, OS, vulnerabilities).  
 - Attempted Metasploit exploitation on Samba service.  
 - Exploit did not yield a session, but the lab demonstrated the process of moving from *scanning → exploitation attempts*.
+
 
 
