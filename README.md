@@ -113,12 +113,8 @@ In Week 1, I successfully:
 
 
 ---
-# 🧠 Cybersecurity Labs — Week 4
+#  Cybersecurity Labs — Week 4
 
-*Author:* Ujunwa Doris Dimejesi  
-*Repository:* cybersecurity-labs
-
----
 
 ## 🔍 Lab Summary
 This week focused on *Nmap scanning and SMB enumeration* of the Metasploitable virtual machine from Kali Linux.
@@ -465,6 +461,7 @@ This shows that exploitation was attempted but unsuccessful in this configuratio
 - Successfully performed Nmap reconnaissance (ports, services, OS, vulnerabilities).  
 - Attempted Metasploit exploitation on Samba service.  
 - Exploit did not yield a session, but the lab demonstrated the process of moving from *scanning → exploitation attempts*.
+
 
 
 
