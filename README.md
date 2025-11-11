@@ -3,7 +3,7 @@
 Welcome to my hands-on cybersecurity lab portfolio!  
 This is where I document everything I'm practicing — from virtual labs to tools like Nmap, Wireshark, Metasploit, and more.
 
-- ## 📚 Table of Contents
+- ##  Table of Contents
 
 ## Table of Contents
 - [Lab 1: Metasploitable2 Setup](#lab-1-metasploitable2-setup-vulnerable-machine-for-testing)
@@ -113,64 +113,8 @@ In Week 1, I successfully:
 
 
 ---
-#  Cybersecurity Labs — Week 4
-
-
-## 🔍 Lab Summary
-This week focused on *Nmap scanning and SMB enumeration* of the Metasploitable virtual machine from Kali Linux.
 
 ---
-
-## ⚙ Commands Executed
-bash
-sudo nmap -sS -sV -p1-1000 192.168.56.105 -oN week4_nmap_tcp1-1000.txt
-sudo nmap -sV --script=banner,vuln -p 21,22,80,445,631 192.168.56.105 -oN week4_nmap_vuln_tcp21-631.txt
-sudo smbclient -L //192.168.56.105 -N | tee week4_smb_list.txt
-sudo smbclient //192.168.56.105/public -N
-nmblookup -A 192.168.56.105 | tee week4_nmblookup.txt
-
-
----
-
-## 🖼 Screenshots
-
-### 1️⃣ Nmap full TCP 1–1000 ports
-![Nmap TCP Scan](./week4_scan1_nmap_tcp1-1000.png)
-
-### 2️⃣ Vulnerability scan (Ports 21–631)
-![Nmap Vulnerability Scan](./week4_nmap_vuln_tcp21-631.png)
-
-### 3️⃣ SMB share list
-![SMB List](./week4_smb_list.png)
-
-### 4️⃣ SMB public access denied
-![SMB Access Denied](./week4_smb_public_access_denied.png)
-
-### 5️⃣ NMBLookup status
-![NMBLookup](./week4_nmblookup.png)
-
----
-
-## 🧾 Observations
-- Target host 192.168.56.105 responded to ping requests.  
-- Open services discovered: *FTP (21), SSH (22), HTTP (80), SMB (445), CUPS (631)*.  
-- smbclient showed the *public* share but denied anonymous access — expected for Metasploitable 3 default settings.  
-- Results were saved as .txt output files for verification.
-
----
-
-## 🧩 How to Reproduce
-1. Launch both *Kali Linux* and *Metasploitable* VMs on the same host-only network (192.168.56.x).  
-2. Verify Kali has an IP in the same range (192.168.56.103).  
-3. Run the commands above using sudo.  
-4. Capture results and screenshots as done here.
-
----
-
-
-
-
-
 
 
 ##  Lab 1: Metasploitable2 Setup (Vulnerable Machine for Testing)
@@ -382,73 +326,73 @@ The objective was to identify open ports, detect services, enumerate vulnerabili
 
 ### Steps and Evidence
 
-#### 🔎 1. Full Nmap Scan  
+####  1. Full Nmap Scan  
 Performed a full port scan on the target.  
 Identified open ports including *139* and *445 (SMB)*.  
 ![Full Nmap Scan](week3_scan1_nmap_full.png.png)
 
 ---
 
-#### 🔎 2. Nmap Open Ports Scan  
+####  2. Nmap Open Ports Scan  
 Verified which ports were open and accessible.  
 Confirmed SMB-related ports.  
 ![Open Ports Scan](week3_scan2_nmap_open_ports.png.png)
 
 ---
 
-#### 🔎 3. Nmap Service Version Detection  
+#### 3. Nmap Service Version Detection  
 Ran -sV scan to identify service versions.  
 Found Samba service running on the target.  
 ![Service Version Detection](week3_scan3_nmap_service_versions.png.png)
 
 ---
 
-#### 🔎 4. Nmap OS Detection  
+####  4. Nmap OS Detection  
 Used -O option to detect the operating system.  
 Confirmed target OS type for exploitation attempts.  
 ![OS Detection](week3_scan4_nmap_os_detection.png.png)
 
 ---
 
-#### 🔎 5. Nmap Vulnerability Scan  
+####  5. Nmap Vulnerability Scan  
 Ran NSE vulnerability scripts on SMB.  
 Confirmed the service was potentially exploitable.  
 ![Nmap Vulnerability Scan](week3_scan5_nmap_vuln.png.png)
 
 ---
 
-#### ⚡ 6. Starting Metasploit Framework  
+####  6. Starting Metasploit Framework  
 Opened msfconsole and prepared the exploitation phase.  
 ![Starting msfconsole](week3_scan6_msfconsole.png.png)
 
 ---
 
-#### ⚡ 7. Searching Samba Exploits in Metasploit  
+####  7. Searching Samba Exploits in Metasploit  
 Used search samba command.  
 Listed multiple Samba exploits available.  
 ![Search Samba](week3_scan7_msf_search_samba.png.png)
 
 ---
 
-#### ⚡ 8. Setting Target Host (RHOSTS)  
+####  8. Setting Target Host (RHOSTS)  
 Set the target machine IP.  
 ![Set RHOSTS](week3_scan9_msf_set_rhosts.png.png)
 
 ---
 
-#### ⚡ 9. Setting Payload  
+####  9. Setting Payload  
 Configured the payload for a reverse shell.  
 ![Set Payload](week3_scan10_msf_set_payload.png.png)
 
 ---
 
-#### ⚡ 10. Setting Local Host (LHOST)  
+####  10. Setting Local Host (LHOST)  
 Configured attacker’s local IP for callback.  
 ![Set LHOST](week3_scan11_msf_set_lhost.png.png)
 
 ---
 
-#### ⚡ 11. Exploit Attempt  
+####  11. Exploit Attempt  
 Used a Samba exploit module to attempt remote code execution.  
 Exploit was launched, but no session was created (target did not open a shell).  
 
@@ -457,11 +401,63 @@ This shows that exploitation was attempted but unsuccessful in this configuratio
 
 ---
 
-### ✅ Summary
+###  Summary
 - Successfully performed Nmap reconnaissance (ports, services, OS, vulnerabilities).  
 - Attempted Metasploit exploitation on Samba service.  
 - Exploit did not yield a session, but the lab demonstrated the process of moving from *scanning → exploitation attempts*.
 
+
+#  Cybersecurity Labs — Week 4
+
+
+##  Lab Summary
+This week focused on *Nmap scanning and SMB enumeration* of the Metasploitable virtual machine from Kali Linux.
+
+---
+
+## ⚙ Commands Executed
+bash
+sudo nmap -sS -sV -p1-1000 192.168.56.105 -oN week4_nmap_tcp1-1000.txt
+sudo nmap -sV --script=banner,vuln -p 21,22,80,445,631 192.168.56.105 -oN week4_nmap_vuln_tcp21-631.txt
+sudo smbclient -L //192.168.56.105 -N | tee week4_smb_list.txt
+sudo smbclient //192.168.56.105/public -N
+nmblookup -A 192.168.56.105 | tee week4_nmblookup.txt
+
+
+---
+
+## 🖼 Screenshots
+
+### 1️ Nmap full TCP 1–1000 ports
+![Nmap TCP Scan](./week4_scan1_nmap_tcp1-1000.png)
+
+### 2️ Vulnerability scan (Ports 21–631)
+![Nmap Vulnerability Scan](./week4_nmap_vuln_tcp21-631.png)
+
+### 3️ SMB share list
+![SMB List](./week4_smb_list.png)
+
+### 4️ SMB public access denied
+![SMB Access Denied](./week4_smb_public_access_denied.png)
+
+### 5️⃣ NMBLookup status
+![NMBLookup](./week4_nmblookup.png)
+
+---
+
+##  Observations
+- Target host 192.168.56.105 responded to ping requests.  
+- Open services discovered: *FTP (21), SSH (22), HTTP (80), SMB (445), CUPS (631)*.  
+- smbclient showed the *public* share but denied anonymous access — expected for Metasploitable 3 default settings.  
+- Results were saved as .txt output files for verification.
+
+---
+
+## How to Reproduce
+1. Launch both *Kali Linux* and *Metasploitable* VMs on the same host-only network (192.168.56.x).  
+2. Verify Kali has an IP in the same range (192.168.56.103).  
+3. Run the commands above using sudo.  
+4. Capture results and screenshots as done here.
 
 
 
