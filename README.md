@@ -113,6 +113,80 @@ In Week 1, I successfully:
 
 
 ---
+# Cybersecurity Labs — Week 4
+
+*Author:* Ujunwa Doris Dimejesi  
+*Repository:* cybersecurity-labs
+
+## Lab summary (Week 4)
+This week: network scanning and SMB enumeration of the Metasploitable VM from Kali Linux.
+
+### Commands run
+- sudo nmap -sS -sV -p1-1000 192.168.56.105 -oN week4_nmap_tcp1-1000.txt
+- sudo nmap -sV --script=banner,vuln -p 21,22,80,445,631 192.168.56.105 -oN week4_nmap_vuln_tcp21-631.txt
+- nmblookup -A 192.168.56.105 | tee week4_nmblookup.txt
+- sudo smbclient -L //192.168.56.105 -N | tee week4_smb_list.txt
+- sudo smbclient //192.168.56.105/public -N (access denied result)
+
+### Files in this folder (Week 4)
+- week4_scan1_nmap_tcp1-1000.png — nmap full TCP 1–1000 screenshot  
+- week4_nmap_vuln_tcp21-631.png — nmap vulnerability script screenshot  
+- week4_nmblookup.png — nmblookup output screenshot  
+- week4_smb_list.png — smbclient list shares screenshot  
+- week4_smb_public_access_denied.png — smbclient access denied screenshot  
+- README.md — this file
+
+### Notes / observations
+- Host 192.168.56.105 responded to pings and had open FTP, SSH, HTTP, SMB, and CUPS according to nmap.  
+- SMB share public exists but access is denied when connecting without credentials (expected default on Metasploitable).  
+- Save raw *.txt outputs (the -oN nmap files and tee outputs) in the repo if you want to preserve the raw command output for grading.
+
+### How to reproduce
+1. Boot Kali and Metasploitable in VirtualBox on the same host-only network (192.168.56.x).  
+2. Ensure Kali eth1 has an IP in the same network (example 192.168.56.103).  
+3. Run the commands listed above from Kali (use sudo where necessary).
+
+---
+
+If you want, I can also create the actual .txt outputs (raw files) in your repo. Upload the .txt files from Kali to your local week4 folder and then drag them into GitHub the same way you uploaded the screenshots.
+
+---
+
+## 2) How to paste this README.md into GitHub (one short step at a time)
+
+1. Open your repo page (you already have it open).  
+2. Scroll down to the *README* box and click the *pencil icon* (Edit).  
+3. In the edit screen:
+   - In the filename field at the top change README.md.txt to **README.md** (replace the name).  
+   - Replace all content with the markdown you copied above (CTRL+V / paste).  
+4. Below the editor, write a commit message like: Add formatted README.md (Week 4) and click *Commit changes*.  
+   - (Make sure *Commit directly to the main branch* is selected unless you want a PR.)
+
+That will rename the file and save it as README.md with the nice formatting.
+
+---
+
+## 3) After you commit
+Paste the GitHub repo URL here (copy the browser address bar). I’ll:
+- check the README formatting,
+- confirm filenames are correct,
+- tell you if anything else is missing for your assignment (like raw .txt outputs),
+- and give the exact README text to put into your course submission if needed.
+
+---
+
+## Quick optional next step (if you want raw .txt outputs in the repo)
+If you ran nmap with -oN and saved week4_nmap_tcp1-1000.txt and week4_nmap_vuln_tcp21-631.txt on Kali, upload them now (same Upload files → drag & drop). If you didn’t save them, I showed the commands earlier — you can run them again and upload.
+
+---
+
+Say *“Yes paste README”* when you want me to paste that README text here again, or go ahead and follow the edit steps and then paste the repo link when you’re done.
+
+
+
+
+
+
 ##  Lab 1: Metasploitable2 Setup (Vulnerable Machine for Testing)
 
 Tool Used: VirtualBox  
@@ -401,6 +475,7 @@ This shows that exploitation was attempted but unsuccessful in this configuratio
 - Successfully performed Nmap reconnaissance (ports, services, OS, vulnerabilities).  
 - Attempted Metasploit exploitation on Samba service.  
 - Exploit did not yield a session, but the lab demonstrated the process of moving from *scanning → exploitation attempts*.
+
 
 
 
